@@ -13,12 +13,13 @@ public class Main {
         System.out.println("Enter third side");
         int thirdSide = scanner.nextInt();
 
-        Triangle triangle1 = new Triangle(firstSide,secondSide,thirdSide);
+        Triangle triangle1 = new Triangle(firstSide, secondSide, thirdSide);
         triangle1.triangleType();
 
         Triangle triangle2 = new Triangle();
-        System.out.println(triangle2.sumSides(firstSide, secondSide, thirdSide));
+        System.out.println(triangle2.perimetrTriamgle(firstSide, secondSide, thirdSide));
 
-
+        Triangle triangle3 = new Triangle();
+        System.out.println(triangle3.squareTriangle(firstSide,secondSide,thirdSide));
     }
 }

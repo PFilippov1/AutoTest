@@ -17,6 +17,7 @@ public class Triangle {
         this.c = c;
     }
 
+
     public void setA(int a) {
         this.a = a;
     }
@@ -45,11 +46,11 @@ public class Triangle {
 //    }
 
     public void triangleType() {
-        if ((a == b && b == c && a == c) && ((a + b > c) && ((a + c > b) && (b + c > a)))){
+        if ((a == b && b == c && a == c) && ((a + b > c) && (a + c > b) && (b + c > a))){
             System.out.println(EQUILATERAL_TRIANGLE);
-        } else if ((a != b && b == c || a != c && b == a) && ((a + c > b) && (b + c > a))){
+        } else if ((a != b && b == c || a != c && b == a) && ((a + b > c) && (a + c > b) && (b + c > a))){
             System.out.println(ISOSCELES_TRIANGLE);
-        } else if ((a != b && b != c && a != c) && ((a + c > b) && (b + c > a))){
+        } else if ((a != b && b != c && a != c) && ((a + b > c) && (a + c > b) && (b + c > a))){
             System.out.println(SIMPLE_TRIANGLE);
         } else{
             System.out.println(NOT_A_TRIANGLE);
@@ -57,10 +58,18 @@ public class Triangle {
     }
 
 
-    public int sumSides(int a, int b, int c) {
+    public int perimetrTriamgle(int a, int b, int c) {
         System.out.println("Sum of sides is: ");
         return a + b + c;
     }
 
+    public double squareTriangle(int a, int b, int c){
+        double perimetr;
+        double square;
+        perimetr = (a+b+c)/2.0;
+        square=Math.sqrt(perimetr*(perimetr-a)*(perimetr-b)*(perimetr-c));
+        System.out.println("square is: ");
+        return square;
+    }
 
 }
