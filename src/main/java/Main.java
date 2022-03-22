@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        System.out.println("enter triangle");
+        System.out.println("enter triangle sides");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first side");
         int firstSide = scanner.nextInt();
@@ -13,13 +13,16 @@ public class Main {
         System.out.println("Enter third side");
         int thirdSide = scanner.nextInt();
 
+
         Triangle triangle1 = new Triangle(firstSide, secondSide, thirdSide);
-        triangle1.triangleType();
+
+
+        triangle1.triangleType(firstSide, secondSide, thirdSide);
 
         Triangle triangle2 = new Triangle();
         System.out.println(triangle2.perimetrTriamgle(firstSide, secondSide, thirdSide));
 
         Triangle triangle3 = new Triangle();
-        System.out.println(triangle3.squareTriangle(firstSide,secondSide,thirdSide));
+        System.out.println(triangle3.squareTriangle(firstSide, secondSide, thirdSide));
     }
 }
