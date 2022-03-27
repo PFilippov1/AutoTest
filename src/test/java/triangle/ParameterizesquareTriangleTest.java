@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class ParameterizesquareTriangleTest {
@@ -21,7 +22,7 @@ public class ParameterizesquareTriangleTest {
     }
 
     @Parameterized.Parameters(name = "{index}:")
-    public static Iterable<Object[]> dataForTest() {
+    public static Collection<Object[]> testData() {
         return Arrays.asList(new Object[][]{
                 {2, 3, 4,2.9047375096555625},
                 {3, 2, 4,2.9047375096555625},
