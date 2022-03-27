@@ -3,6 +3,10 @@ package triangle;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
 
 // добавляем ссылку на объект
 class TriangleTest {
@@ -106,4 +110,7 @@ class TriangleTest {
         Assertions.assertEquals(6.0, triangle4.squareTriangle(3, 4, 5));
         Assertions.assertNotEquals(7.0, triangle4.squareTriangle(3, 4, 5));
     }
+
+
 }
+

@@ -1,6 +1,11 @@
 package triangle;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
 import javax.management.ObjectName;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Triangle {
@@ -124,4 +129,9 @@ public class Triangle {
         return square;
     }
 
+
+
+
 }
+
+
